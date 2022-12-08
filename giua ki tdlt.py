@@ -85,10 +85,10 @@ while flag ==False :
           sophut = (t3.seconds % 3600) // 60
           sogiay = t3.seconds - (sogio * 3600 + sophut * 60)
           print("Báo thức sẽ kêu sau: ", number_of_days, "ngày", sogio, "giờ", sophut, "phút", sogiay, "giây")
-          Flag = True
+          flag = True
       else:
           print('Thời gian đặt báo thức không hợp lệ')
-          Flag = False
+          flag = False
 
 flag = False
 while flag == False :
