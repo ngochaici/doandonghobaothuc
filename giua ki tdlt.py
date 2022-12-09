@@ -51,7 +51,7 @@ while flag ==False :
                           ngbt = int(input("vui lòng nhập lại ngày báo thức"))
                       else :
                           kq = 3
-              if (tbt!= 2):
+                            if (tbt!= 2):
                   if (tbt < 8):
                       if (tbt%2 == 0):
                           while (ngbt < 1) or (ngbt > 30):
@@ -64,10 +64,16 @@ while flag ==False :
                           else:
                               kq = 3
                   else:
-                      while (ngbt < 1) or (ngbt > 31):
-                          ngbt = int(input('vui lòng nhập lại ngày báo thức'))
+                      if (tbt %2 ==0):
+                          while (ngbt < 1) or (ngbt > 31):
+                                 ngbt = int(input('vui lòng nhập lại ngày báo thức'))
+                          else:
+                               kq = 3
                       else:
-                          kq = 3
+                          while (ngbt<1) or (ngbt>30) :
+                              ngbt =  int(input('vui lòng nhập lại ngày báo thức'))
+                          else:
+                              kq = 3
       from datetime import datetime
 
       today = datetime.today()
