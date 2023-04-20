@@ -22,7 +22,7 @@ while flag ==False :
           pbt = int(input("nhập phút báo thức"))
           while (pbt<0) or (pbt>59):
               pbt =int(input("vui lòng nhập lại phút báo thức"))
-          else:
+          else: haha
               giaybt= int(input("nhập giây báo thức"))
               while (giaybt<0) or (giaybt>59):
                   giaybt= int(input("vui lòng nhập lại giây báo thức"))
